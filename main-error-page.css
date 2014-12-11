@@ -193,3 +193,188 @@ p.codrops-demos a.current-demo:hover{
 		left: auto;
 	}
 }
+*{
+  box-sizing: border-box;
+  margin:0;
+  padding:0;
+}
+.clearfix:before,
+.clearfix:after {
+    content: " "; 
+    display: table; 
+}
+.clearfix:after {
+    clear: both;
+}
+.clearfix {
+    *zoom: 1;
+}
+
+html{
+  height:100%; 
+  overflow-y:scroll;
+  overflow-x:hidden;
+}
+body{
+  width:100%;
+  height:100%;
+  line-height:1.5;
+  font-family:'Lato', sans-serif;
+  font-weight:300;
+  font-size:16px;
+  background:#007A3D;
+}
+ul{
+  list-style-type: none;
+}
+.demo-wrapper{
+}
+.dashboard{
+}
+
+/* the wrapper column */
+
+.col1{
+  width:99%; 
+  margin:1em auto;	
+  padding-top:20px;
+  padding-left:1%;
+}
+
+/* the square boxes */
+
+.big, .small{ 
+  float:left; 
+  margin:0 auto 1%; 
+  color:white;
+  font-size:48px;
+  text-align:center; 
+  height: 156px;
+  font-weight:300;
+  overflow:hidden;
+  padding:1em 1em;
+  cursor:pointer;
+  transition:all 0.3s ease-out;
+  opacity:0.8;
+}
+
+.big:hover, .small:hover{
+  background:none;
+}
+
+
+
+.big{
+  width: 49%;
+  margin-right: 1%;
+ 
+}
+.small{ 
+  width: 24%;
+  margin-right: 1%;
+}
+.big p {
+  transition:all 0.3s ease-out;
+}
+.small.last{
+  margin-right:0;
+}
+
+/*icon fonts styles*/
+
+.icon-font{
+  font-weight: bold;
+  font-family:''Arial Narrow',Arial,sans-serif;
+  line-height: 72px;
+  font-size:72px;
+}
+.big .icon-font{
+  float:left;
+}
+
+
+a {
+	text-decoration:none;
+}
+
+
+
+.opps-thumb {background:none; 
+font-family:'Arial Narrow',Arial,sans-serif;
+padding:1.5%;
+cursor: default;
+}
+.opps-thumb:hover {color:#2FB1BE;}
+
+.opps-thumb p{
+  font-size:32px;
+  line-height:36px;
+
+}
+.opps-thumb-span{
+  display:block;
+}
+.opps-thumb:hover p{
+}
+
+.back-thumb p{
+	font-size:12px;
+}
+
+
+
+
+
+@media screen and (min-width: 64em){
+   .col1{
+    margin: 0 auto;
+  } 
+  
+}
+
+
+
+@media screen and (max-width: 800px){
+
+.opps-thumb p{
+	line-height:24px;
+	font-size:24px;
+}
+
+}
+
+@media screen and (max-width: 599px){
+
+  .big, .small{
+	padding:0.4em 0.2em;
+	height: 78px;
+	font-size:32px;
+	
+  }
+  
+.opps-thumb p{
+  font-size:18px;
+  line-height:18px;
+}  
+  
+
+.opps-thumb form {
+	display:none;
+}
+
+.icon-font{
+  font-weight: bold;
+  font-family:'BebasNeueRegular','Arial Narrow',Arial,sans-serif;
+  line-height:36px;
+  font-size:36px;
+} 
+  
+}
+
+@media screen and (max-width: 320px){
+.col1 {
+    width: 280px;
+}
+
+}
+
